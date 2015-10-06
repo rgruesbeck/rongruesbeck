@@ -11,7 +11,7 @@
     "srcserver": "cd src; python2.7 -m SimpleHTTPServer 8000",
     "buildserver": "cd build; python2.7 -m SimpleHTTPServer 8001",
     "build": "rm -rf build; gulp",
-    "deploy": "git subtree push --prefix build origin gh-pages; echo 'deployed to http://rgruesbeck.github.io/rongruesbeck/'",
+    "deploy": "git subtree push --prefix build origin gh-pages",
     "test": "echo 'who needs tests!?'"
   },
   "keywords": [
