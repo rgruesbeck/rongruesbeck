@@ -1,0 +1,204 @@
+/*
+https://coolors.co/app/42e6ff-04dbac-25a877-160f29-e8e9f9
+*/
+
+h1 {
+  color: blue;
+}
+
+li {
+  list-style-type: none;
+}
+
+hr {
+  border-color: #160F29;
+  background-color: #E8E9F9;
+  opacity: 0.1;
+}
+
+#shows ul li hr {
+  max-width: 800px;
+  padding: 20px;
+}
+
+#shows ul li:last-child hr {
+  display: none;
+}
+
+section {
+  padding: 40px;
+}
+
+header .navbar {
+  font-size: 1.25em;
+  background-color: hsla(256, 46%, 11%, 0);
+  border: 0;
+}
+
+header .navbar a.nav-link {
+  color: #61707D;
+}
+
+header .navbar a.nav-link:hover {
+  border-color: hsla(256, 46%, 11%, 0);
+  opacity: 0.75;
+  text-decoration: none;
+}
+
+.logo {
+  max-height: 70px;
+}
+
+footer {
+  position: relative;
+  font-size: 0.95em;
+  height: 100px;
+  color: #61707D;
+  background-color: #160F29;
+}
+
+footer .credits {
+  position: absolute;
+  color: dodgerblue;
+  bottom: 1em;
+  right: 2em;
+  opacity: 0.75;
+}
+
+footer .credits a:hover {
+  text-decoration: none;
+}
+
+#banner {
+  height: 750px;
+}
+
+.jumbotron {
+  background: none;
+}
+
+#listen {
+  background-color: #E8E9F9;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#shows {
+  background-color: #E8E9F9;
+  padding-top: 80px;
+  opacity: 0.75;
+}
+
+#shows ul {
+  list-style-type: none;
+}
+
+#shows .show-card {
+  color: #160F29;
+  padding-bottom: 20px;
+}
+
+#shows .show-card .venue {
+  display: inline;
+  color: #160F29;
+}
+
+#shows .show-card .date {
+  display: inline;
+  padding-left: 0.5em;
+}
+
+#shows .show-card .time {
+  display: inline;
+}
+
+#shows .show-card .price {
+  display: inline;
+  padding-left: 0.5em;
+}
+
+#shows .show-card .address {
+}
+
+#shows .show-card .details {
+  font-size: 0.85em;
+}
+
+#contact {
+  min-height: 250px;
+  color: #160F29;
+  background-color: #E8E9F9;
+  opacity: 0.75;
+  padding-bottom: 80px;
+}
+ #contact .social-media {
+   padding-top: 20px;
+ }
+
+ #contact .contact-form {
+   padding-top: 40px;
+ }
+
+ #contact h2 {
+   font-weight: normal;
+   font-size: 24px;
+ }
+
+#contact .social-media a {
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #160F29;
+  opacity: 0.65;
+}
+
+#contact .social-media i:hover {
+  opacity: 1;
+  -ms-transform: rotate(9deg); /* IE 9 */
+  -webkit-transform: rotate(9deg); /* Chrome, Safari, Opera */
+  transform: rotate(9deg);
+}
+
+#contact .social-media a i.fa-soundcloud { color: orange; }
+#contact .social-media a i.fa-facebook-square { color: blue; }
+#contact .social-media a i.fa-youtube-play { color: red; }
+#contact .social-media a i.fa-twitter { color: dodgerblue; }
+
+#contact li {
+  font-size: 0.95em;
+}
+
+#contact form {
+  display: block;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+#contact form .input-group {
+  width: 100%;
+}
+
+#contact form input {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#contact form textarea {
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+#contact form button {
+  color: #E8E9F9;
+  background-color: #160F29;
+  border-radius: 5px;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+button i {
+  padding-right: 0.5em;
+}
