@@ -20,7 +20,9 @@
           </div>
           <ul class="nav navbar-nav">
             <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <!--
             <li><a class="nav-link" href="#tools">Tools</a></li>
+            -->
             <li><a class="nav-link" href="#contact">Get In Touch</a></li>
           </ul>
         </div>
@@ -29,14 +31,10 @@
     <section id="about">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
-            About me
+          <div class="col-md-8">
+            <h1>Technologist based in Oakland CA.</h1>
           </div>
           <div class="col-md-4">
-            Porjects I like
-          </div>
-          <div class="col-md-4">
-            currently hacking on
           </div>
         </div>
       </div>
@@ -44,6 +42,7 @@
     <section id="portfolio">
       <div class="container">
         <ul id="past-projects">
+            <!--
           <li class="project">
             <div class="project-card">
               <h2>Project 1</h2>
@@ -52,27 +51,74 @@
             </div>
             <hr>
           </li>
+            -->
           <li class="project">
             <div class="project-card">
-              <h2>Project 2</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="images/projects/napa-artwalk.png" alt="" />
+                </div>
+                <div class="col-md-6">
+                  <h2>Napa Artwalk</h2>
+                  <h3 class="tags">#Nodejs #Angularjs #Heroku</h3>
+                </div>
+              </div>
             </div>
             <hr>
           </li>
           <li class="project">
             <div class="project-card">
-              <h2>Project 3</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="images/projects/all-the-tunes.png" alt="" />
+                </div>
+                <div class="col-md-6">
+                  <h2>All The Tunes</h2>
+                  <h3 class="tags">#Nodejs #S3 #Browserify</h3>
+                </div>
+              </div>
             </div>
             <hr>
           </li>
           <li class="project">
             <div class="project-card">
-              <h2>Project 4</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="images/projects/el-dorado-arts-council.jpg" alt="" />
+                </div>
+                <div class="col-md-6">
+                  <h2>El Dorado Arts Council</h2>
+                  <h3 class="tags">#Nodejs #Express #MongoDB #Angularjs #Heroku #Stripe</h3>
+                </div>
+              </div>
             </div>
             <hr>
           </li>
           <li class="project">
             <div class="project-card">
-              <h2>Project 5</h2>
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="images/projects/arts-council-napa-valley.jpg" alt="" />
+                </div>
+                <div class="col-md-6">
+                  <h2>Napa Valley Arts Council</h2>
+                  <h3 class="tags">#RubyOnRails #Postgresql #Heroku</h3>
+                </div>
+              </div>
+            </div>
+            <hr>
+          </li>
+          <li class="project">
+            <div class="project-card">
+              <div class="row">
+                <div class="col-md-4">
+                  <img src="images/projects/mad_science.png" alt="" />
+                </div>
+                <div class="col-md-6">
+                  <h2>Wine Methanol Concentration Model Prototype</h2>
+                  <h3 class="tags">#R #Python #IR #GC #GCMS</h3>
+                </div>
+              </div>
             </div>
             <hr>
           </li>
@@ -82,30 +128,46 @@
     <section id="tools">
       <div class="container">
         <h2>Some tools I am familiar with:</h2>
-        <span><i class="fa fa-git orange" alt="git"></i></span>
-        <span><img src="images/vim_logo.png" alt="Vim"/></span>
+        <div class="row">
+          <div class="col-md-3 tool-group">
+            <h3>Languages:</h3>
+            <span><img src="images/tools/shell_logo.png" alt="Shell"/></span>
+            <span><img src="images/tools/javascript_logo.png" alt="Javascript"/></span>
+            <span><img src="images/tools/ruby_logo.png" alt="Ruby"/></span>
+            <span><img src="images/tools/python_logo.png" alt="Python"/></span>
+            <span><img src="images/tools/r_logo.png" alt="R"/></span>
+          </div>
+          <div class="col-md-3 tool-group">
+            <h3>Client Side:</h3>
+            <span><i class="fa fa-html5 orange" alt="html5"></i></span>
+            <span><i class="fa fa-css3 blue" alt="css3"></i></span>
+            <span><img src="images/tools/jquery_logo.png" alt="JQuery"/></span>
+            <span><img src="images/tools/angularjs_logo.png" alt="AngularJS"/></span>
+          </div>
+          <div class="col-md-3 tool-group">
+            <h3>Server Side:</h3>
+            <span><img src="images/tools/nodejs_logo.png" alt="Node"/></span>
+            <span><img src="images/tools/rails_logo.png" alt="Rails"/></span>
+            <span><img src="images/tools/express_logo.png" alt="Express"/></span>
+            <span><img src="images/tools/postgresql_logo.png" alt="Postgresql"/></span>
+            <span><img src="images/tools/mongodb_logo.png" alt="MongoDB"/></span>
+          </div>
+          <div class="col-md-3 tool-group">
+            <h3>Misc:</h3>
+            <span><i class="fa fa-git orange" alt="git"></i></span>
+            <span><img src="images/tools/aws_logo.png" alt="AWS"/></span>
+            <span><img src="images/tools/digital_ocean_logo.png" alt="Digital Ocean"/></span>
+            <span><img src="images/tools/heroku_logo.png" alt="Heroku"/></span>
+          </div>
+          <!--
+            <span><img src="images/tools/java_logo.png" alt="Java"/></span>
+            <span><i class="fa fa-git orange" alt="git"></i></span>
+            <span><img src="images/tools/vim_logo.png" alt="Vim"/></span>
+          -->
+        </div>
 
-        <span><img src="images/shell_logo.png" alt="Shell"/></span>
-        <span><img src="images/javascript_logo.png" alt="Javascript"/></span>
-        <span><img src="images/ruby_logo.png" alt="Ruby"/></span>
-        <span><img src="images/python_logo.png" alt="Python"/></span>
-        <span><img src="images/r_logo.png" alt="R"/></span>
 
-        <span><i class="fa fa-html5 orange" alt="html5"></i></span>
-        <span><i class="fa fa-css3 blue" alt="css3"></i></span>
-        <span><img src="images/jquery_logo.png" alt="JQuery"/></span>
-        <span><img src="images/angularjs_logo.png" alt="AngularJS"/></span>
 
-        <span><img src="images/rails_logo.png" alt="Rails"/></span>
-        <span><img src="images/express_logo.png" alt="Express"/></span>
-
-        <span><img src="images/aws_logo.png" alt="AWS"/></span>
-        <span><img src="images/digital_ocean_logo.png" alt="Digital Ocean"/></span>
-        <span><img src="images/heroku_logo.png" alt="Heroku"/></span>
-        <span><img src="images/nodejs_logo.png" alt="Node"/></span>
-
-        <span><img src="images/mongodb_logo.png" alt="MongoDB"/></span>
-        <span><img src="images/postgresql_logo.png" alt="Postgresql"/></span>
       </div>
     </section>
     <section id="contact">
@@ -117,8 +179,11 @@
           </div>
           <div class="col-md-4 social-media">
             <h2>Find me on...</h2>
-            <a href="https://github.com/rgruesbeck" target="_blank"><i class="fa fa-github fa-4x"></i></a>
+            <a href="https://github.com/rgruesbeck" target="_blank"><img src="images/tools/octocat.png"/></a>
+            <a href="https://github.com/rgruesbeck" target="_blank"><img src="images/tools/npm_logo.svg"/></a>
+          <!--
             <a href="https://twitter.com/rongruesbeck" target="_blank"><i class="fa fa-twitter fa-4x"></i></a>
+          -->
           </div>
         </div>
       </div>
