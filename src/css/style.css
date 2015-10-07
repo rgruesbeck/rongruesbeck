@@ -16,12 +16,12 @@ hr {
   opacity: 0.1;
 }
 
-#shows ul li hr {
+#portfolio ul li hr {
   max-width: 800px;
   padding: 20px;
 }
 
-#shows ul li:last-child hr {
+#portfolio ul li:last-child hr {
   display: none;
 }
 
@@ -55,72 +55,70 @@ footer {
   height: 100px;
   color: #61707D;
   background-color: #160F29;
+  text-align: center;
 }
 
-footer .credits {
+footer a {
   position: absolute;
-  color: dodgerblue;
   bottom: 1em;
-  right: 2em;
   opacity: 0.75;
 }
 
-footer .credits a:hover {
+footer a:hover {
   text-decoration: none;
 }
 
-#banner {
-  height: 750px;
+#about {
+  background-color: #E8E9F9;
+  min-height: 350px;
 }
 
 .jumbotron {
   background: none;
 }
 
-#listen {
-  background-color: #E8E9F9;
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-#shows {
+#portfolio {
   background-color: #E8E9F9;
   padding-top: 80px;
   opacity: 0.75;
 }
 
-#shows ul {
+#portfolio ul {
   list-style-type: none;
 }
 
-#shows .show-card {
+#portfolio .project-card {
   color: #160F29;
   padding-bottom: 20px;
 }
 
-#shows .show-card .venue {
+#portfolio img {
+  max-height: 300px;
+}
+
+#portfolio .project-card .venue {
   display: inline;
   color: #160F29;
 }
 
-#shows .show-card .date {
+#portfolio .project-card .date {
   display: inline;
   padding-left: 0.5em;
 }
 
-#shows .show-card .time {
+#portfolio .project-card .time {
   display: inline;
 }
 
-#shows .show-card .price {
+#portfolio .project-card .price {
   display: inline;
   padding-left: 0.5em;
 }
 
-#shows .show-card .address {
+#portfolio .project-card .address {
 }
 
-#shows .show-card .details {
+#portfolio .project-card .details {
   font-size: 0.85em;
 }
 
@@ -128,7 +126,6 @@ footer .credits a:hover {
   min-height: 250px;
   color: #160F29;
   background-color: #E8E9F9;
-  opacity: 0.75;
   padding-bottom: 80px;
 }
  #contact .social-media {
@@ -141,21 +138,25 @@ footer .credits a:hover {
 
  #contact h2 {
    font-weight: normal;
-   font-size: 24px;
+   font-size: 1.5em;
+   opacity: 0.80;
+ }
+
+ #contact .contact-email {
+   font-weight: normal;
+   font-size: 1.5em;
  }
 
 #contact .social-media a {
   padding: 10px;
   margin-bottom: 10px;
   color: #160F29;
-  opacity: 0.65;
+  opacity: 0.5;
 }
 
-#contact .social-media i:hover {
-  opacity: 1;
-  -ms-transform: rotate(9deg); /* IE 9 */
-  -webkit-transform: rotate(9deg); /* Chrome, Safari, Opera */
-  transform: rotate(9deg);
+#contact .social-media a:hover {
+  opacity: 0.65;
+  text-decoration: none;
 }
 
 #contact .social-media a i.fa-soundcloud { color: orange; }

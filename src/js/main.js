@@ -43,30 +43,6 @@ var googleSheets = function (opts){
 
 $(document).ready(function(){
 
-  //instantiate Shows
-  var Shows = googleSheets({
-    key: '1mQBD9V2G5tt937UL8HEuH6CYJqm0VYyLKs1baIeJX8I',
-    sheet_number: 1,
-    fields: ['date', 'time', 'venue', 'price', 'address', 'details', 'status'],
-    slugs: ['date', 'venue']
-  });
-
-  //get upcoming shows and render to page
-  Shows.upcoming(function(shows){
-    //sort by date function
-    var sortbydate = function(a, b){
-      if (a.datetime > b.datetime) {
-        return 1;
-      }
-      if (a.datetime < b.datetime) {
-        return -1;
-      }
-      return 0;
-    };
-    //render shows
-    $('#upcoming-shows').render(shows.sort(sortbydate));
-  });
-
   //style changes on scroll
   $(document).on('scroll', function (e) {
     var scroll = $(document).scrollTop();
@@ -78,14 +54,14 @@ $(document).ready(function(){
 
     var light = function (rate, min, max) {
       var light_weight = (alpha(rate, 1) * 100) + min;
-      var light = light_weight >= max ? max + "%" : ~~light_weight + "%"
+      var light = light_weight >= max ? max + "%" : ~~light_weight + "%";
       return light;
     }
 
     //navbar style
     $('.navbar').css({
-      "background-color": "hsla(256, 46%, 11%, " + alpha(400, 0.95) + ")",
-      "box-shadow": "0 2px 8px -1px hsla(256, 46%, 11%, " + alpha(300, 0.90) + ")"
+      "background-color": "hsla(256, 46%, 11%, " + alpha(400, 1) + ")",
+      "box-shadow": "0 2px 8px -1px hsla(256, 46%, 11%, " + alpha(300, 1) + ")"
     });
 
     //navbar links style
