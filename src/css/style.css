@@ -77,6 +77,31 @@ footer a:hover {
   background: none;
 }
 
+#tools {
+  background-color: #E8E9F9;
+  opacity: 0.75;
+}
+
+#tools span {
+  font-size: 50px;
+  max-height: 50px;
+  padding: 10px;
+  opacity: 0.80;
+}
+
+#tools span img {
+  max-height: 45px;
+}
+
+#tools span:hover {
+  opacity: 1;
+}
+
+#tools h2 {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
 #portfolio {
   background-color: #E8E9F9;
   padding-top: 80px;
@@ -94,6 +119,8 @@ footer a:hover {
 
 #portfolio img {
   max-height: 300px;
+  box-shadow: 0 2px 4px 0px black;
+  margin: 20px;
 }
 
 #portfolio .project-card .venue {
@@ -202,4 +229,12 @@ footer a:hover {
 
 button i {
   padding-right: 0.5em;
+}
+
+.orange {
+  color: orange;
+}
+
+.blue {
+  color: dodgerblue;
 }
