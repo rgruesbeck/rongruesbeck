@@ -45,6 +45,12 @@ header .navbar a.nav-link:hover {
   text-decoration: none;
 }
 
+header .navbar .navbar-brand img {
+  margin-top: -0.25em;
+  max-height: 2.5em;
+  border-radius: 2em;
+}
+
 .logo {
   max-height: 70px;
 }
@@ -97,8 +103,7 @@ footer a:hover {
 }
 
 #tools {
-  background-color: #E8E9F9;
-  opacity: 0.75;
+  background-color: #eeeefa;
 }
 
 #tools .tool-group {
@@ -138,9 +143,8 @@ footer a:hover {
 }
 
 #portfolio {
-  background-color: #E8E9F9;
+  background-color: #eeeefa;
   padding-top: 80px;
-  opacity: 0.75;
 }
 
 #portfolio ul {
