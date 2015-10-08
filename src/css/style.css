@@ -59,13 +59,16 @@ footer {
 }
 
 footer a {
+  color: white;
   position: absolute;
   bottom: 1em;
   opacity: 0.75;
 }
 
 footer a:hover {
+  color: white;
   text-decoration: none;
+  opacity: 0.95;
 }
 
 #about {
