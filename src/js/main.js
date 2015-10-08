@@ -60,13 +60,13 @@ $(document).ready(function(){
 
     //navbar style
     $('.navbar').css({
-      "background-color": "hsla(256, 46%, 11%, " + alpha(400, 1) + ")",
+      "background-color": "hsla(256, 46%, 11%, " + alpha(350, 1) + ")",
       "box-shadow": "0 2px 8px -1px hsla(256, 46%, 11%, " + alpha(300, 1) + ")"
     });
 
     //navbar links style
     $('.navbar a').css({
-      "color": "hsla(208, 13%, " + light(1000, 44, 100) + "%, 1)"
+      "color": "hsla(208, 13%, " + light(100, 44, 90) + ", 1)"
     });
 
   });
