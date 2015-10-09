@@ -69,6 +69,12 @@ $(document).ready(function(){
       "color": "hsla(208, 13%, " + light(100, 44, 90) + ", 1)"
     });
 
+    //navbar-toggle
+    $('.navbar-toggle').css({
+      "background-color": "hsla(256, 46%, 11%, " + alpha(9999, 1) + ")",
+      "color": "hsla(208, 13%, " + light(100, 44, 90) + ", 1)"
+    });
+
   });
 
   //smooth scroll to element on click

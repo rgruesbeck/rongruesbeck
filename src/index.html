@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Ron Gruesbeck | Technologist</title>
-    <link rel="stylesheet" href="https://bootswatch.com/readable/bootstrap.min.css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css" media="screen" charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -51,29 +51,26 @@
     <section id="portfolio">
       <div class="container">
         <ul id="past-projects">
-            <!--
-          <li class="project">
-            <div class="project-card">
-              <h2>Project 1</h2>
-              <img src="https://pbs.twimg.com/profile_images/616542814319415296/McCTpH_E.jpg" alt="" />
-              <p>This project was great!</p>
-            </div>
-            <hr>
-          </li>
-            -->
           <li class="project">
             <div class="project-card">
               <div class="row">
                 <div class="col-md-4">
                   <a href="http://www.napaartwalk.org/" target="_blank">
-                    <img src="images/projects/napa-artwalk.png" alt="Napa Artwalk" />
+                    <img class="img-responsive" src="images/projects/napa-artwalk.png" alt="Napa Artwalk" />
                   </a>
                 </div>
                 <div class="col-md-6">
-                  <a href="http://www.napaartwalk.org/" target="_blank">
-                    <h2>Napa Artwalk</h2>
-                  </a>
-                  <h3 class="tags">#Nodejs #Angularjs #Heroku</h3>
+                  <h2>Napa Artwalk</h2>
+                  <p>Website for the Napawalk</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h3 class="tags">
+                    <span>#Nodejs</span>
+                    <span>#Angularjs</span>
+                    <span>#Heroku</span>
+                  </h3>
                 </div>
               </div>
             </div>
@@ -84,12 +81,21 @@
               <div class="row">
                 <div class="col-md-4">
                   <a href="http://allthetunes.io.s3-website-us-west-2.amazonaws.com/" target="_blank">
-                    <img src="images/projects/all-the-tunes.png" alt="All The Tunes" />
+                    <img class="img-responsive" src="images/projects/all-the-tunes.png" alt="All The Tunes" />
                   </a>
                 </div>
                 <div class="col-md-6">
                   <h2>All The Tunes</h2>
-                  <h3 class="tags">#Nodejs #S3 #Browserify</h3>
+                  <p>A fuzzy search interface for several jazz fakebooks on the Internet Archive.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h3 class="tags">
+                    <span>#Nodejs</span>
+                    <span>#S3</span>
+                    <span>#Browserify</span>
+                  </h3>
                 </div>
               </div>
             </div>
@@ -100,12 +106,24 @@
               <div class="row">
                 <div class="col-md-4">
                   <a href="http://www.eldoradoartscouncil.org" target="_blank">
-                    <img src="images/projects/el-dorado-arts-council.jpg" alt="El Dorado Arts Council" />
+                    <img class="img-responsive" src="images/projects/el-dorado-arts-council.jpg" alt="El Dorado Arts Council" />
                   </a>
                 </div>
                 <div class="col-md-6">
                   <h2>El Dorado Arts Council</h2>
-                  <h3 class="tags">#Nodejs #Express #MongoDB #Angularjs #Heroku #Stripe</h3>
+                  <p>Website for El Dorado Arts Council and a custom built admin interface. Integrated online store for ticket sales using the stripe API.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h3 class="tags">
+                    <span>#Nodejs</span>
+                    <span>#Angularjs</span>
+                    <span>#Express</span>
+                    <span>#MongoDB</span>
+                    <span>#Heroku</span>
+                    <span>#Stripe</span>
+                  </h3>
                 </div>
               </div>
             </div>
@@ -116,12 +134,21 @@
               <div class="row">
                 <div class="col-md-4">
                   <a href="http://www.artscouncilnapavalley.org/" target="_blank">
-                    <img src="images/projects/arts-council-napa-valley.jpg" alt="Arts Council Napa Valley" />
+                    <img class="img-responsive" src="images/projects/arts-council-napa-valley.jpg" alt="Arts Council Napa Valley" />
                   </a>
                 </div>
                 <div class="col-md-6">
                   <h2>Arts Council Napa Valley</h2>
-                  <h3 class="tags">#RubyOnRails #Postgresql #Heroku</h3>
+                  <p>Website for Arts Council Napa Valley. Using Rails Admin for the administration panel.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h3 class="tags">
+                    <span>#RubyOnRails</span>
+                    <span>#Postgresql</span>
+                    <span>#Heroku</span>
+                  </h3>
                 </div>
               </div>
             </div>
@@ -132,12 +159,23 @@
               <div class="row">
                 <div class="col-md-4">
                   <a href="#contact" target="_blank">
-                    <img src="images/projects/mad_science.png" alt="Wine Methanol Concentration Model Prototype" />
+                    <img class="img-responsive" src="images/projects/wine_pls.png" alt="Wine Methanol Concentration Model Prototype" />
                   </a>
                 </div>
                 <div class="col-md-6">
-                  <h2>Wine Methanol Concentration Model Prototype</h2>
-                  <h3 class="tags">#R #Python #IR #GC #GCMS</h3>
+                  <h2>Prediction Model for Ethanol and Methanol Concentrations in Wine from IR data.</h2>
+                  <p>Exploratory prediction model for ethanol and methanol concentrations in wine for Sutter Home Winery. Using Python and R for training PLS (Partial Least Squares) model with IR data.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <h3 class="tags">
+                    <span>#Python</span>
+                    <span>#R</span>
+                    <span>#IR</span>
+                    <span>#GC</span>
+                    <span>#GCMS</span>
+                  </h3>
                 </div>
               </div>
             </div>

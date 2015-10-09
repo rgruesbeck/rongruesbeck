@@ -11,7 +11,7 @@
     "srcserver": "livereloadx --static -p 8000 src",
     "buildserver": "livereloadx --static -p 8000 build",
     "build": "rm -rf build; gulp",
-    "deploy": "git subtree push --prefix build origin gh-pages",
+    "deploy": "git subtree push --prefix build origin gh-pages; echo 'https://rgruesbeck.github.io/rongruesbeck/'",
     "test": "echo 'who needs tests!?'"
   },
   "keywords": [

@@ -51,6 +51,15 @@ header .navbar .navbar-brand img {
   border-radius: 2em;
 }
 
+.navbar-toggle {
+  border: none;
+  border-color: hsla(256, 46%, 11%, 0);
+  text-decoration: none;
+}
+
+.navbar-toggle:hover {
+}
+
 .logo {
   max-height: 70px;
 }
@@ -80,7 +89,7 @@ footer a:hover {
 #about {
   padding-top: 5em;
   background-color: #E8E9F9;
-  min-height: 350px;
+  min-height: 18em;
 }
 
 #about h1 {
@@ -120,7 +129,7 @@ footer a:hover {
   font-size: 50px;
   max-height: 50px;
   padding: 10px;
-  opacity: 0.7;
+  opacity: 0.4;
 }
 
 #tools span img {
@@ -157,19 +166,36 @@ footer a:hover {
 }
 
 #portfolio img {
-  max-width: 350px;
-  box-shadow: 0 2px 4px 0px black;
-  opacity: 1;
+  width: 350px;
+  -webkit-box-shadow: 0 10px 45px -20px black;
+  -moz-box-shadow: 0 10px   45px -20px black;
+  box-shadow: 0 10px 45px -20px black;
+}
+
+#portfolio img:hover {
+  -webkit-box-shadow: 0 10px 45px -18px black;
+  -moz-box-shadow: 0 10px   45px -18px black;
+  box-shadow: 0 10px 45px -18px black;
 }
 
 #portfolio .project-card h2 {
   font-weight: normal;
 }
 
-#portfolio .project-card .tags {
+.project-card p {
+  opacity: 0.75;
+}
+
+.tags {
   font-style: bold;
   font-weight: normal;
   font-size: 1.2em;
+  opacity: 0.50;
+}
+
+.tags span {
+  padding-right: 0.5em;
+  line-height: 150%;
 }
 
 #portfolio .project-card .date {
@@ -228,18 +254,12 @@ footer a:hover {
   padding: 10px;
   margin-bottom: 10px;
   color: #160F29;
-  opacity: 0.5;
 }
 
 #contact .social-media a:hover {
-  opacity: 0.65;
+  opacity: 0.75;
   text-decoration: none;
 }
-
-#contact .social-media a i.fa-soundcloud { color: orange; }
-#contact .social-media a i.fa-facebook-square { color: blue; }
-#contact .social-media a i.fa-youtube-play { color: red; }
-#contact .social-media a i.fa-twitter { color: dodgerblue; }
 
 #contact li {
   font-size: 0.95em;
