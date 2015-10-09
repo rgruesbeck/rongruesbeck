@@ -44,9 +44,9 @@ gulp.task('js', function() {
 
 // Minify css
 //.pipe(replace("../images/", "/images/"))
+//.pipe(minifycss())
 gulp.task('minify-css', function() {
   return gulp.src(paths.css)
-    .pipe(minifycss())
     .pipe(concat('style.min.css'))
     .pipe(gulp.dest('build/css'));
 });
