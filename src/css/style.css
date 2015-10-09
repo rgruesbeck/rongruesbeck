@@ -167,12 +167,15 @@ footer a:hover {
 
 #portfolio img {
   width: 350px;
+}
+
+#portfolio img.shadow {
   -webkit-box-shadow: 0 10px 45px -20px black;
   -moz-box-shadow: 0 10px   45px -20px black;
   box-shadow: 0 10px 45px -20px black;
 }
 
-#portfolio img:hover {
+#portfolio img.shadow:hover {
   -webkit-box-shadow: 0 10px 45px -18px black;
   -moz-box-shadow: 0 10px   45px -18px black;
   box-shadow: 0 10px 45px -18px black;
