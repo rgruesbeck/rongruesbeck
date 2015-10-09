@@ -10,6 +10,7 @@ var del = require('del');
 
 var paths = {
   index: 'src/index.html',
+  cname: 'src/CNAME',
   js: 'src/js/**/*.js',
   lib: 'src/lib/**/*.js',
   images: 'src/images/**/*',
@@ -20,6 +21,14 @@ var paths = {
 gulp.task('clean', function(cb) {
   del(['build'], cb);
 });
+
+
+//Transfer CNAME
+gulp.task('cname', function(){
+  return gulp.src(paths.cname)
+    .pipe(gulp.dest('build'));
+});
+
 
 // Minify and configure index.html
 gulp.task('index-html', function(){
@@ -71,4 +80,4 @@ gulp.task('watch', function() {
 });
 
 // The default task (called when you run `gulp` from cli) 
-gulp.task('default', ['clean', 'index-html', 'js', 'lib', 'minify-css', 'images']);
+gulp.task('default', ['clean', 'index-html', 'cname', 'js', 'lib', 'minify-css', 'images']);
