@@ -39,6 +39,7 @@ gulp.task('index-html', function(){
   return gulp.src(paths.index)
     .pipe(replace("js/main.js", "js/app.min.js"))
     .pipe(replace("css/style.css", "css/style.min.css"))
+    .pipe(replace('<link rel="stylesheet" href="css/bootstrap.css" media="screen" charset="utf-8">', ''))
     .pipe(minifyhtml(opts))
     .pipe(gulp.dest('build'));
 });
