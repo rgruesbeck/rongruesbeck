@@ -7,12 +7,11 @@ npm install
 ```
 
 ## Dev Servers
-As of now just using python SimpleHTTPServer
-To serv src files:
+To serve src files:
 ```sh
 npm run srcserver
 ```
-To serv build files:
+To serve build files:
 ```sh
 npm run buildserver
 ```
@@ -23,7 +22,10 @@ npm run build
 ```
 
 ## Deploy
-build and commit to master branch. then run:
 ```sh
+npm run build
+git add .
+git commit
+git push origin master
 npm run deploy
 ```
