@@ -6,26 +6,17 @@ http://rgruesbeck.github.io/rongruesbeck/
 npm install
 ```
 
-## Dev Servers
-To serve src files:
+## Get Started
+Start build script
 ```sh
-npm run srcserver
+npm start
 ```
-To serve build files:
+Open a new shell and start the server
 ```sh
-npm run buildserver
-```
-
-## Build
-```sh
-npm run build
+npm run server
 ```
 
 ## Deploy
 ```sh
-npm run build
-git add .
-git commit
-git push origin master
 npm run deploy
 ```
