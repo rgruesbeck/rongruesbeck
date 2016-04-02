@@ -32,5 +32,8 @@ node_modules
 *~
 *.\#
 
+# Dist
+dist
+
 # Temp directory
 tmp
