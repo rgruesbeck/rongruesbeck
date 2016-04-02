@@ -10,6 +10,7 @@ var del = require('del');
 var paths = {
   index: 'src/index.html',
   cname: 'src/CNAME',
+  favicon: 'src/favicon.ico',
   js: 'src/js/**/*.js',
   lib: 'src/lib/**/*.js',
   images: 'src/images/**/*',
@@ -28,6 +29,11 @@ gulp.task('cname', function(){
     .pipe(gulp.dest('dist'));
 });
 
+//Transfer favicon
+gulp.task('favicon', function(){
+  return gulp.src(paths.favicon)
+    .pipe(gulp.dest('dist'));
+});
 
 // Minify and configure index.html
 gulp.task('index', function(){
@@ -82,6 +88,7 @@ gulp.task('watch', function() {
 gulp.task('compile', [
     'index',
     'cname',
+    'favicon',
     'js',
     'lib',
     'css',
