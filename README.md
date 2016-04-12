@@ -20,3 +20,10 @@ npm run server
 ```sh
 npm run deploy
 ```
+
+## Todo
+standardize font sizes
+fix acnv image
+add more content to each project
+migrate to rendering page out from jsonfile
+finish up remaining sugestions
