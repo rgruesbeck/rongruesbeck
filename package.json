@@ -10,7 +10,7 @@
   "scripts": {
     "start": "gulp",
     "server": "livereloadx --static -p 3000 dist",
-    "deploy": "gulp build; git add .; git commit -m 'deploy'; git subtree push --prefix dist origin gh-pages",
+    "deploy": "gulp build; git add .; git commit -m 'deploy'; git push origin master; git subtree push --prefix dist origin gh-pages",
     "test": "echo 'test pending'"
   },
   "keywords": [
