@@ -22,9 +22,8 @@ npm run deploy
 ```
 
 ## Todo
-optimize the 2 large images
-fix acnv image
-add more content to each project
 migrate to rendering page out from jsonfile
+add more content to each project
 finish up remaining sugestions
 move from fontawesome to fontpack
+fix acnv image
