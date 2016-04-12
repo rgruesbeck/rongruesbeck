@@ -3,6 +3,8 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var minifycss = require('gulp-minify-css');
 var minifyhtml = require('gulp-minify-html');
+var inject = require('gulp-inject');
+var rev = require('gulp-rev');
 var replace = require('gulp-replace');
 var sourcemaps = require('gulp-sourcemaps');
 var del = require('del');
@@ -16,6 +18,12 @@ var paths = {
   images: 'src/images/**/*',
   css: 'src/css/**/*.css'
 };
+
+var assetpaths = [
+ 'dist/css/**/*.css',
+ 'dist/js/**/*.js',
+ 'dist/lib/**/*.js'
+];
 
 //clear dist dir
 gulp.task('clear', function(done) {
@@ -41,10 +49,12 @@ gulp.task('index', function(){
     conditionals: true,
     spare:true
   };
-  return gulp.src(paths.index)
+  var target = gulp.src(paths.index);
+  var sources = gulp.src(assetpaths, {read: false});
+
+  return target.pipe(inject(sources))
+    .pipe(replace("/dist/", "/"))
     .pipe(replace("js/main.js", "js/app.min.js"))
-    .pipe(replace("css/style.css", "css/style.min.css"))
-    .pipe(replace('<link rel="stylesheet" href="css/bootstrap.css" media="screen" charset="utf-8">', ''))
     .pipe(minifyhtml(opts))
     .pipe(gulp.dest('dist'));
 });
@@ -54,6 +64,7 @@ gulp.task('js', function() {
   return gulp.src(paths.js)
       .pipe(uglify())
       .pipe(concat('app.min.js'))
+      .pipe(rev())
     .pipe(gulp.dest('dist/js'));
 });
 
@@ -61,12 +72,14 @@ gulp.task('js', function() {
 gulp.task('css', function() {
   return gulp.src(paths.css)
     .pipe(concat('style.min.css'))
+    .pipe(rev())
     .pipe(gulp.dest('dist/css'));
 });
 
 // Copy all vendor javascripts
 gulp.task('lib', function() {
   return gulp.src(paths.lib)
+    .pipe(rev())
     .pipe(gulp.dest('dist/lib'));
 });
 
@@ -86,13 +99,13 @@ gulp.task('watch', function() {
 });
 
 gulp.task('compile', [
-    'index',
     'cname',
     'favicon',
     'js',
     'lib',
     'css',
-    'images'
+    'images',
+    'index'
 ]);
 
 gulp.task('build', [

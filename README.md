@@ -22,8 +22,10 @@ npm run deploy
 ```
 
 ## Todo
+add injecting and versioning to build
 standardize font sizes
 fix acnv image
 add more content to each project
 migrate to rendering page out from jsonfile
 finish up remaining sugestions
+move from fontawesome to fontpack
