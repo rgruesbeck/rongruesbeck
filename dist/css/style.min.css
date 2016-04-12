@@ -6922,6 +6922,12 @@ h1 {
   color: blue;
 }
 
+p {
+  font-weight: normal;
+  font-size: 1em;
+  font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 li {
   list-style-type: none;
 }
@@ -6955,6 +6961,7 @@ header .navbar a.nav-link {
   color: #61707D;
 }
 
+
 header .navbar a.nav-link:hover {
   border-color: hsla(256, 46%, 11%, 0);
   opacity: 0.75;
@@ -6965,6 +6972,14 @@ header .navbar .navbar-brand img {
   margin-top: -0.25em;
   max-height: 2.5em;
   border-radius: 2em;
+}
+
+header .navbar .navbar-brand h1 {
+  color: #61707D;
+  font-weight: normal;
+  font-size: 2em;
+  margin-top: -0.15em;
+  font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 .navbar-toggle {
@@ -7005,7 +7020,7 @@ footer a:hover {
 #about {
   padding-top: 5em;
   background-color: #E8E9F9;
-  min-height: 18em;
+  //min-height: 14em;
 }
 
 #about h1 {
@@ -7018,7 +7033,7 @@ footer a:hover {
   color: black;
   font-weight: normal;
   font-style: bold;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
   opacity: 0.65;
 }
@@ -7074,6 +7089,7 @@ footer a:hover {
 
 #portfolio ul {
   list-style-type: none;
+  padding-left: 0px;
 }
 
 #portfolio .project-card {
@@ -7082,6 +7098,13 @@ footer a:hover {
 }
 
 #portfolio img {
+  margin-top: 6px;
+  margin-bottom: 2em;
+  width: 350px;
+}
+
+#portfolio img .acnv-img {
+  margin-top: 6px;
   width: 350px;
 }
 
@@ -7098,6 +7121,7 @@ footer a:hover {
 }
 
 #portfolio .project-card h2 {
+  margin-top: 0px;
   font-weight: normal;
 }
 
@@ -7159,14 +7183,16 @@ footer a:hover {
    opacity: 0.80;
 }
 
-#contact a img{
+#contact a img {
   max-height: 60px;
   max-width: 100px;
 }
 
 #contact .contact-email {
-   font-weight: normal;
-   font-size: 1.5em;
+  text-decoration: none;
+  font-weight: normal;
+  font-size: 1.5em;
+  font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 #contact .social-media a {
