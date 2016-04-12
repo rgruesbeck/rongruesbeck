@@ -102,9 +102,10 @@ footer a:hover {
 }
 
 #about {
-  padding-top: 5em;
+  //padding-top: 5em;
   background-color: #E8E9F9;
   //min-height: 14em;
+  max-height: 2em;
 }
 
 #about h1 {
@@ -168,7 +169,7 @@ footer a:hover {
 
 #portfolio {
   background-color: #eeeefa;
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
 #portfolio ul {
