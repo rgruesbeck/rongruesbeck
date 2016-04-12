@@ -6997,7 +6997,7 @@ header .navbar .navbar-brand h1 {
 
 footer {
   position: relative;
-  font-size: 0.95em;
+  font-size: 1em;
   height: 100px;
   color: #61707D;
   background-color: #160F29;
@@ -7034,7 +7034,7 @@ footer a:hover {
   color: black;
   font-weight: normal;
   font-style: bold;
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
   opacity: 0.65;
 }
@@ -7058,7 +7058,7 @@ footer a:hover {
 }
 
 #tools span {
-  font-size: 50px;
+  font-size: 2.5em;
   max-height: 50px;
   padding: 10px;
   opacity: 0.4;
@@ -7074,12 +7074,12 @@ footer a:hover {
 }
 
 #tools h2 {
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: normal;
 }
 
 #tools h3 {
-  font-size: 1.2em;
+  font-size: 1.25em;
   font-weight: normal;
 }
 
@@ -7131,10 +7131,8 @@ footer a:hover {
 }
 
 .tags {
-  font-style: bold;
   font-weight: normal;
-  font-size: 1.2em;
-  opacity: 0.50;
+  font-size: 1em;
 }
 
 .tags span {
@@ -7160,7 +7158,7 @@ footer a:hover {
 }
 
 #portfolio .project-card .details {
-  font-size: 0.85em;
+  font-size: 1em;
 }
 
 #contact {
@@ -7168,6 +7166,8 @@ footer a:hover {
   color: #160F29;
   background-color: #E8E9F9;
   padding-bottom: 80px;
+  font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+  opacity: 0.80;
 }
 
 #contact .social-media {
@@ -7179,9 +7179,8 @@ footer a:hover {
 }
 
 #contact h2 {
-   font-weight: normal;
-   font-size: 1.5em;
-   opacity: 0.80;
+  font-size: 1.25em;
+  font-weight: normal;
 }
 
 #contact a img {
@@ -7189,15 +7188,12 @@ footer a:hover {
   max-width: 100px;
 }
 
-#contact .contact-email {
+#contact a.contact-email {
   text-decoration: none;
-  font-weight: normal;
-  font-size: 1.5em;
-  font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 #contact .social-media a {
-  padding: 10px;
+  padding-right: 10px;
   margin-bottom: 10px;
   color: #160F29;
 }
@@ -7208,7 +7204,7 @@ footer a:hover {
 }
 
 #contact li {
-  font-size: 0.95em;
+  font-size: 1em;
 }
 
 #contact form {

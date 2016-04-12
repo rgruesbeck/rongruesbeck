@@ -22,8 +22,7 @@ npm run deploy
 ```
 
 ## Todo
-add injecting and versioning to build
-standardize font sizes
+optimize the 2 large images
 fix acnv image
 add more content to each project
 migrate to rendering page out from jsonfile

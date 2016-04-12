@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var gulpif = require('gulp-if');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var minifycss = require('gulp-minify-css');
@@ -24,6 +25,10 @@ var assetpaths = [
  'dist/js/**/*.js',
  'dist/lib/**/*.js'
 ];
+
+function isproduction() {
+    return process.env.NODE_ENV == 'production';
+}
 
 //clear dist dir
 gulp.task('clear', function(done) {
@@ -54,32 +59,32 @@ gulp.task('index', function(){
 
   return target.pipe(inject(sources))
     .pipe(replace("/dist/", "/"))
-    .pipe(replace("js/main.js", "js/app.min.js"))
-    .pipe(minifyhtml(opts))
+    .pipe(gulpif(isproduction(), replace("js/main.js", "js/app.min.js")))
+    .pipe(gulpif(isproduction(), minifyhtml(opts)))
     .pipe(gulp.dest('dist'));
 });
 
 // Minify and copy all JavaScript (except vendor scripts) with sourcemaps all the way down 
 gulp.task('js', function() {
   return gulp.src(paths.js)
-      .pipe(uglify())
-      .pipe(concat('app.min.js'))
-      .pipe(rev())
+    .pipe(gulpif(isproduction(), uglify()))
+    .pipe(gulpif(isproduction(), concat('app.min.js')))
+    .pipe(gulpif(isproduction(), rev()))
     .pipe(gulp.dest('dist/js'));
 });
 
 // Minify css
 gulp.task('css', function() {
   return gulp.src(paths.css)
-    .pipe(concat('style.min.css'))
-    .pipe(rev())
+    .pipe(gulpif(isproduction(), concat('style.min.css')))
+    .pipe(gulpif(isproduction(), rev()))
     .pipe(gulp.dest('dist/css'));
 });
 
 // Copy all vendor javascripts
 gulp.task('lib', function() {
   return gulp.src(paths.lib)
-    .pipe(rev())
+    .pipe(gulpif(isproduction(), rev()))
     .pipe(gulp.dest('dist/lib'));
 });
 
