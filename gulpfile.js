@@ -21,13 +21,13 @@ var paths = {
 };
 
 var assetpaths = [
- 'dist/css/**/*.css',
- 'dist/js/**/*.js',
- 'dist/lib/**/*.js'
+  'dist/css/**/*.css',
+  'dist/js/**/*.js',
+  'dist/lib/**/*.js'
 ];
 
 function isproduction() {
-    return process.env.NODE_ENV == 'production';
+  return process.env.NODE_ENV = 'production';
 }
 
 //clear dist dir
@@ -96,26 +96,26 @@ gulp.task('images', function() {
 
 // Rerun the task when a file changes 
 gulp.task('watch', function() {
-    gulp.watch(paths.index, ['index']);
-    gulp.watch(paths.cname, ['cname']);
-    gulp.watch(paths.js, ['js']);
-    gulp.watch(paths.lib, ['lib']);
-    gulp.watch(paths.css, ['css']);
+  gulp.watch(paths.index, ['index']);
+  gulp.watch(paths.cname, ['cname']);
+  gulp.watch(paths.js, ['js']);
+  gulp.watch(paths.lib, ['lib']);
+  gulp.watch(paths.css, ['css']);
 });
 
 gulp.task('compile', [
-    'cname',
-    'favicon',
-    'js',
-    'lib',
-    'css',
-    'images',
-    'index'
+  'cname',
+  'favicon',
+  'js',
+  'lib',
+  'css',
+  'images',
+  'index'
 ]);
 
 gulp.task('build', [
-    'clear',
-    'compile'
+  'clear',
+  'compile'
 ]);
 
 // The default task (called when you run `gulp` from cli) 
