@@ -6,6 +6,7 @@ var minifycss = require('gulp-minify-css');
 var minifyhtml = require('gulp-minify-html');
 var inject = require('gulp-inject');
 var rev = require('gulp-rev');
+var hb = require('gulp-hb');
 var replace = require('gulp-replace');
 var sourcemaps = require('gulp-sourcemaps');
 var del = require('del');
@@ -17,6 +18,7 @@ var paths = {
   js: 'src/js/**/*.js',
   lib: 'src/lib/**/*.js',
   images: 'src/images/**/*',
+  templating: 'src/templating/**/*',
   css: 'src/css/**/*.css'
 };
 
@@ -58,6 +60,11 @@ gulp.task('index', function(){
   var sources = gulp.src(assetpaths, {read: false});
 
   return target.pipe(inject(sources))
+    .pipe(hb({
+      partials: './src/templating/partials/**/*.hbs',
+      helpers: './src/templating/helpers/*.js',
+      data: './src/templating/data/**/*.{js,json}'
+    }))
     .pipe(replace("/dist/", "/"))
     .pipe(gulpif(isproduction(), replace("js/main.js", "js/app.min.js")))
     .pipe(gulpif(isproduction(), minifyhtml(opts)))
@@ -97,6 +104,7 @@ gulp.task('images', function() {
 // Rerun the task when a file changes 
 gulp.task('watch', function() {
   gulp.watch(paths.index, ['index']);
+  gulp.watch(paths.templating, ['index']);
   gulp.watch(paths.cname, ['cname']);
   gulp.watch(paths.js, ['js']);
   gulp.watch(paths.lib, ['lib']);

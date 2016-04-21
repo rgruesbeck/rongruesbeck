@@ -24,6 +24,7 @@
     "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
+    "gulp-hb": "^5.1.0",
     "gulp-if": "^2.0.0",
     "gulp-inject": "^4.0.0",
     "gulp-minify-css": "^1.2.4",
