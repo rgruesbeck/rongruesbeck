@@ -43,6 +43,7 @@ header .navbar {
 
 header .navbar a.nav-link {
   color: #61707D;
+  margin-top: 30px;
 }
 
 
@@ -53,7 +54,6 @@ header .navbar a.nav-link:hover {
 }
 
 header .navbar .navbar-brand img {
-  margin-top: -0.25em;
   max-height: 2.5em;
   border-radius: 2em;
 }
@@ -62,7 +62,7 @@ header .navbar .navbar-brand h1 {
   color: #61707D;
   font-weight: normal;
   font-size: 2em;
-  margin-top: -0.15em;
+  margin-top: -24px;
   font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
