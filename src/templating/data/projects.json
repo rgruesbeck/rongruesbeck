@@ -23,22 +23,4 @@
 	"S3",
 	"Browserify"
       ]
-    },
-    {
-      "title": "",
-      "body": "",
-      "image": {
-	"file": "",
-	"alt": ""
-      },
-      "links": [
-	{
-	  "tag": "",
-	  "href": "",
-	  "text": ""
-	}
-      ],
-      "tools" : [
-      ]
-    }
 ]
