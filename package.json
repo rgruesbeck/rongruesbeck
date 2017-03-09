@@ -8,9 +8,10 @@
     "url": "https://github.com/rgruesbeck/rongruesbeck.git"
   },
   "scripts": {
-    "start": "gulp",
+    "start": "rm -rf build; gulp",
+    "poststart": "livereloadx --static -p 3000 dist",
     "server": "livereloadx --static -p 3000 dist",
-    "deploy": "NODE_ENV=production gulp build; git add .; git commit -m 'deploy'; git push origin master; git subtree push --prefix dist origin gh-pages",
+    "deploy": "rm -rf build; NODE_ENV=production gulp build; git add .; git commit -m 'deploy'; git push origin master; git subtree push --prefix dist origin gh-pages",
     "test": "echo 'test pending'"
   },
   "keywords": [
