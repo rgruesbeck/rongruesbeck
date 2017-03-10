@@ -57,7 +57,7 @@ gulp.task('index', function(){
     spare:true
   };
   var target = gulp.src(paths.index);
-  var sources = gulp.src(assetpaths);
+  var sources = gulp.src(assetpaths, {read: false});
 
   return target.pipe(inject(sources))
     .pipe(hb({
