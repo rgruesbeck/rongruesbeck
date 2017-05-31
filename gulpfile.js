@@ -18,6 +18,7 @@ var paths = {
   js: 'src/js/**/*.js',
   lib: 'src/lib/**/*.js',
   images: 'src/images/**/*',
+  files: 'src/files/**/*',
   templating: 'src/templating/**/*',
   css: 'src/css/**/*.css'
 };
@@ -99,6 +100,12 @@ gulp.task('lib', function() {
 gulp.task('images', function() {
   return gulp.src(paths.images)
     .pipe(gulp.dest('dist/images'));
+
+});
+// Copy all static files 
+gulp.task('files', function() {
+  return gulp.src(paths.files)
+    .pipe(gulp.dest('dist/files'));
 });
 
 // Rerun the task when a file changes 
@@ -118,6 +125,7 @@ gulp.task('compile', [
   'lib',
   'css',
   'images',
+  'files',
   'index'
 ]);
 
