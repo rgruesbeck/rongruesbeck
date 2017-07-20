@@ -100,6 +100,12 @@ gulp.task('lib', function() {
 gulp.task('images', function() {
   return gulp.src(paths.images)
     .pipe(gulp.dest('dist/images'));
+
+});
+// Copy all static files 
+gulp.task('files', function() {
+  return gulp.src(paths.files)
+    .pipe(gulp.dest('dist/files'));
 });
 
 // Copy all static files 
