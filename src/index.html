@@ -10,223 +10,33 @@
     <!-- endinject -->
   </head>
   <body>
-    <header id="top">
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span><i class="fa fa-chevron-down fa-1x"></i></span>
-            </button>
-		<a class="navbar-brand nav-link" href="#top">
-		  <h1>Web Developer</h1>
-		</a>
-	    <!-- <img alt="Ron Gruesbeck :" src="images/ron.png"/> -->
-          </div>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li><a class="nav-link" href="#top">Portfolio</a></li>
-              <li><a class="nav-link" href="#contact">Get In Touch</a></li>
-              <li><a class="nav-link" href="/files/ron-gruesbeck.pdf">Resume</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
     <section id="about">
       <div class="container">
-      </div>
-    </section>
-    <section id="portfolio">
-      <div class="container">
-        <ul id="past-projects">
-
-	  {{#each projects}}
-	    <li id="fuzzy" class="project">
-		<div class="project-card">
-		<div class="row">
-		    <div class="col-md-4">
-		    <img class="img-responsive shadow" src="images/projects/{{image.file}}" alt="{{image.alt}}" />
-		    </div>
-		    <div class="col-md-8">
-		    <h2>{{title}}</h2>
-		    <p>{{{body}}}</p>
-		    <p class="tags">
-		      {{#each links}}
-			<span>{{tag}}: <a href="{{href}}" target="_blank">{{text}}</a></span>
-		      {{/each}}
-		    </p>
-		    <p class="tags">
-		      {{#each tools}}
-			<span>#{{this}}</span>
-		      {{/each}}
-		    </p>
-		    </div>
-		</div>
-		</div>
-		<hr>
-	    </li>
-	  {{/each}}
-	  
-          <li class="project">
-            <div class="project-card">
-              <div class="row">
-                <div class="col-md-4">
-                  <a href="http://www.artscouncilnapavalley.org/" target="_blank">
-                    <img class="img-responsive acnv-img" src="images/projects/arts-council-napa-valley.png" alt="Arts Council Napa Valley" />
-                  </a>
-                </div>
-                <div class="col-md-8">
-                  <h2>Arts Council Napa Valley</h2>
-                  <p>Website for Arts Council Napa Valley. Using Rails Admin for the administration panel.</p>
-                  <p class="tags">
-                    <span>#RubyOnRails</span>
-                    <span>#Postgresql</span>
-                    <span>#Heroku</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <hr>
-          </li>
-          <li class="project">
-            <div class="project-card">
-              <div class="row">
-                <div class="col-md-4">
-                  <a href="https://github.com/NixieAgency/el-dorado-arts-council" target="_blank">
-                    <img class="img-responsive" src="images/projects/el-dorado-arts-council.png" alt="El Dorado Arts Council" />
-                  </a>
-                </div>
-                <div class="col-md-8">
-                  <h2>El Dorado Arts Council</h2>
-                  <p>Website for El Dorado Arts Council and a custom built admin interface. Integrated online store for ticket sales using the stripe API.</p>
-                  <p class="tags">
-                    <span>#Nodejs</span>
-                    <span>#Angularjs</span>
-                    <span>#Express</span>
-                    <span>#MongoDB</span>
-                    <span>#Heroku</span>
-                    <span>#Stripe</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <hr>
-          </li>
-          <li class="project">
-            <div class="project-card">
-              <div class="row">
-                <div class="col-md-4">
-                  <a href="http://www.napaartwalk.org/" target="_blank">
-                    <img class="img-responsive shadow" src="images/projects/napa-artwalk.png" alt="Napa Artwalk" />
-                  </a>
-                  <span id="wine"> </span>
-                </div>
-                <div class="col-md-8">
-                  <h2>Napa Artwalk</h2>
-                  <p>Website for the Napawalk</p>
-                  <p class="tags">
-                    <span>#Nodejs</span>
-                    <span>#Angularjs</span>
-                    <span>#Heroku</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <hr>
-          </li>
-          <li class="project">
-            <div class="project-card">
-              <div class="row">
-                <div class="col-md-4">
-                  <img class="img-responsive shadow" src="images/projects/wine_pls.png" alt="Wine Methanol Concentration Model Prototype" />
-                </div>
-                <div class="col-md-8">
-                  <h2>Prediction Model for Ethanol and Methanol Concentrations in Wine from IR data.</h2>
-                  <p>Exploratory prediction model for ethanol and methanol concentrations in wine for Sutter Home Winery. Using Python and R for training PLS (Partial Least Squares) model with IR data.</p>
-                  <p class="tags">
-                    <span>#Python</span>
-                    <span>#R</span>
-                    <span>#IR</span>
-                    <span>#GC</span>
-                    <span>#GCMS</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <hr>
-          </li>
-        </ul>
+        <h1>Ron Gruesbeck</h1>
+        <p>
+          I am a technologist, free software enthusiast, and advocate of Unix computer culture.
+        </p>
+        <p>
+          My personal projects include a Web RCT signal server and client for browser to browser file transfer, and a small web interface for searching and viewing Jazz leadsheets hosted by the Internet Archive.
+        </p>
+        <p>
+          My technology exposure includes JavaScript/Node.js, Ruby/Rails, Python, Go, R, Docker, AWS, React, Angular, Express, HTML, and CSS.
+        </p>
       </div>
     </section>
     <section id="contact">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-md-offset-2 social-media">
-            <h2>Tell me about your project!</h2>
-	    <h2>
-		<a class="contact-email" href="mailto:ron@rongruesbeck.com">ron@rongruesbeck.com</a>
-	    </h2>
-          </div>
-          <div class="col-md-4 social-media">
-            <h2>Find me on</h2>
-            <a href="https://github.com/rgruesbeck" target="_blank"><img src="images/tools/octocat.png"/></a>
-            <a href="https://www.npmjs.com/~rongruesbeck" target="_blank"><img src="images/tools/npm_logo.svg"/></a>
-          <!--
-            <a href="https://twitter.com/rongruesbeck" target="_blank"><i class="fa fa-twitter fa-4x blue"></i></a>
-          -->
-          </div>
+        <div class="col-md-4 social-media">
+          <a href="files/ron-gruesbeck.pdf" target="_blank"><img src="images/cv.png"/></a>
+          <a href="https://github.com/rgruesbeck" target="_blank"><img src="images/tools/octocat.png"/></a>
+          <a href="https://twitter.com/rongruesbeck" target="_blank"><img src="images/twitter.png"/></a>
+        <!--
+          <a href="https://www.npmjs.com/~rongruesbeck" target="_blank"><img src="images/tools/npm_logo.svg"/></a>
+          <a href="https://twitter.com/rongruesbeck" target="_blank"><img src="images/twitter.png"/></a>
+        -->
         </div>
       </div>
     </section>
-    <footer>
-    <section id="tools">
-      <div class="container">
-          <!--
-	    <a href="#top" target="_blank"><i class="fa fa-arrow-circle-up fa-3x"></i></a>
-          -->
-        <h2>Some tools I am familiar with</h2>
-        <div class="row">
-          <div class="col-md-3 tool-group">
-            <h3>Languages:</h3>
-            <span><img src="images/tools/shell_logo.png" alt="Shell"/></span>
-            <span><img src="images/tools/javascript_logo.png" alt="Javascript"/></span>
-            <span><img src="images/tools/ruby_logo.png" alt="Ruby"/></span>
-            <span><img src="images/tools/python_logo.png" alt="Python"/></span>
-            <span><img src="images/tools/r_logo.png" alt="R"/></span>
-          </div>
-          <div class="col-md-3 tool-group">
-            <h3>Client Side:</h3>
-            <span><i class="fa fa-html5 orange" alt="html5"></i></span>
-            <span><i class="fa fa-css3 blue" alt="css3"></i></span>
-            <span><img src="images/tools/jquery_logo.png" alt="JQuery"/></span>
-            <span><img src="images/tools/angularjs_logo.png" alt="AngularJS"/></span>
-          </div>
-          <div class="col-md-3 tool-group">
-            <h3>Server Side:</h3>
-            <span><img src="images/tools/nodejs_logo.png" alt="Node"/></span>
-            <span><img src="images/tools/rails_logo.png" alt="Rails"/></span>
-            <span><img src="images/tools/express_logo.png" alt="Express"/></span>
-            <span><img src="images/tools/postgresql_logo.png" alt="Postgresql"/></span>
-            <span><img src="images/tools/mongodb_logo.png" alt="MongoDB"/></span>
-          </div>
-          <div class="col-md-3 tool-group">
-            <h3>Misc:</h3>
-            <span><i class="fa fa-git orange" alt="git"></i></span>
-            <span><img src="images/tools/aws_logo.png" alt="AWS"/></span>
-            <span><img src="images/tools/digital_ocean_logo.png" alt="Digital Ocean"/></span>
-            <span><img src="images/tools/heroku_logo.png" alt="Heroku"/></span>
-          </div>
-          <!--
-            <span><img src="images/tools/java_logo.png" alt="Java"/></span>
-            <span><i class="fa fa-git orange" alt="git"></i></span>
-            <span><img src="images/tools/vim_logo.png" alt="Vim"/></span>
-          -->
-        </div>
-      </div>
-    </section>
-    </footer>
     <!-- scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
