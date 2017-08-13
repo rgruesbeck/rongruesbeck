@@ -30,3 +30,15 @@ section {
   max-width: 8em;
   padding-right: 1em;
 }
+
+@media (max-width: 500px) {
+  body {
+    font-size: calc(1.25em + 1vmin);
+  }
+}
+
+@media (max-width: 350px) {
+  body {
+    font-size: calc(1.5em + 1vmin);
+  }
+}
