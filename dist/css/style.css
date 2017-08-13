@@ -1,6 +1,7 @@
 body {
   background-color: white;
   font-family: "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: calc(1em + 1vmin);
 }
 
 section {
