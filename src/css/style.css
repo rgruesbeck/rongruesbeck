@@ -11,11 +11,20 @@ section {
   padding-right: 3em;
 }
 
+a {
+  font-weight: bold;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
 #about {
 }
 
 #about h1 {
   font-size: 4em;
+  //color: rgb(163, 255, 193);
 }
 
 #contact {
