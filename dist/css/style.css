@@ -4,22 +4,20 @@ body {
   font-size: 16px;
 }
 
-section {
-  padding-left: 5vw;
-  padding-right: 5vw;
+#content {
+  padding: 8vw;
 }
 
 h1 {
-  font-size: 300%;
+  font-size: 4em;
 }
 
 p {
-  font-size: 100%;
+  font-size: 2em;
   line-height: 1.2;
 }
 
 a {
-  font-size: 100%;
   font-weight: bold;
 }
 
@@ -27,21 +25,12 @@ a {
   //color: rgb(163, 255, 193);
 }
 
-#contact {
-}
-
-#contact .social-media {
-  padding: 0;
-}
-
-#contact a img {
-  max-height: 3em;
-  max-width: 8em;
-  padding-right: 1em;
+#contact a {
+  font-size: 2em;
 }
 
 @media only screen
 and (max-width: 1000px) {
-    body { font-size: 5vw; }
-    h1 { font-size: 200%; }
+    body { font-size: 1.5em; }
+    h1 { font-size: 3em; }
 }
