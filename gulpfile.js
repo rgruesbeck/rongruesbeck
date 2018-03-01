@@ -11,22 +11,19 @@ var replace = require('gulp-replace');
 var sourcemaps = require('gulp-sourcemaps');
 var del = require('del');
 
+var browserSync = require('browser-sync').create();
+
 var paths = {
   index: 'src/index.html',
   cname: 'src/CNAME',
   favicon: 'src/favicon.ico',
-  js: 'src/js/**/*.js',
-  lib: 'src/lib/**/*.js',
-  images: 'src/images/**/*',
   files: 'src/files/**/*',
   templating: 'src/templating/**/*',
   css: 'src/css/**/*.css'
 };
 
 var assetpaths = [
-  'dist/css/**/*.css',
-  'dist/js/**/*.js',
-  'dist/lib/**/*.js'
+  'dist/css/**/*.css'
 ];
 
 function isproduction() {
@@ -72,14 +69,6 @@ gulp.task('index', function(){
     .pipe(gulp.dest('dist'));
 });
 
-// Minify and copy all JavaScript (except vendor scripts) with sourcemaps all the way down 
-gulp.task('js', function() {
-  return gulp.src(paths.js)
-    .pipe(gulpif(isproduction(), uglify()))
-    .pipe(gulpif(isproduction(), concat('app.min.js')))
-    .pipe(gulpif(isproduction(), rev()))
-    .pipe(gulp.dest('dist/js'));
-});
 
 // Minify css
 gulp.task('css', function() {
@@ -89,54 +78,35 @@ gulp.task('css', function() {
     .pipe(gulp.dest('dist/css'));
 });
 
-// Copy all vendor javascripts
-gulp.task('lib', function() {
-  return gulp.src(paths.lib)
-    .pipe(gulpif(isproduction(), rev()))
-    .pipe(gulp.dest('dist/lib'));
-});
-
-// Copy all static images 
-gulp.task('images', function() {
-  return gulp.src(paths.images)
-    .pipe(gulp.dest('dist/images'));
-
-});
-// Copy all static files 
-gulp.task('files', function() {
-  return gulp.src(paths.files)
-    .pipe(gulp.dest('dist/files'));
-});
 
 // Copy all static files 
 gulp.task('files', function() {
   return gulp.src(paths.files)
     .pipe(gulp.dest('dist/files'));
+});
+
+// Serve
+gulp.task('serve', function() {
+  browserSync.init({
+    server: {
+      baseDir: "./dist"
+    }
+  });
 });
 
 // Rerun the task when a file changes 
 gulp.task('watch', function() {
   gulp.watch(paths.index, ['index']);
-  gulp.watch(paths.templating, ['index']);
-  gulp.watch(paths.cname, ['cname']);
-  gulp.watch(paths.js, ['js']);
-  gulp.watch(paths.lib, ['lib']);
   gulp.watch(paths.css, ['css']);
 });
 
 gulp.task('compile', [
-  'cname',
   'favicon',
-  'js',
-  'lib',
   'css',
-  'images',
-  'files',
   'index'
 ]);
 
 gulp.task('build', [
-  'clear',
   'compile'
 ]);
 

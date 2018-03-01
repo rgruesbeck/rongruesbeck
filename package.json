@@ -8,11 +8,9 @@
     "url": "https://github.com/rgruesbeck/rongruesbeck.git"
   },
   "scripts": {
-    "start": "rm -rf build; gulp",
-    "poststart": "livereloadx --static -p 3000 dist",
-    "server": "livereloadx --static -p 3000 dist",
-    "deploy": "NODE_ENV=production gulp build; git add .; git commit -m 'deploy'; git push origin master; git subtree push --prefix dist origin gh-pages",
-    "olddeploy": "rm -rf build; NODE_ENV=production gulp build; git add .; git commit -m 'deploy'; git push origin master; git subtree push --prefix dist origin gh-pages",
+    "start": "rm -rf build; gulp & browser-sync start --server 'dist' --files 'dist'",
+    "deploy:s3": "rm -rf dist; gulp; aws s3 sync dist s3://rongruesbeck.com --acl public-read",
+    "deploy:ghpages": "NODE_ENV=production gulp build; git add .; git commit -m 'deploy'; git push origin master; git subtree push --prefix dist origin gh-pages",
     "test": "echo 'test pending'"
   },
   "keywords": [
@@ -23,6 +21,7 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {
+    "browser-sync": "^2.23.6",
     "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.0",
