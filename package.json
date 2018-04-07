@@ -11,7 +11,7 @@
     "start": "rm -rf build; gulp & browser-sync start --server 'dist' --files 'dist'",
     "deploy:s3": "rm -rf dist; gulp build; aws s3 sync dist s3://rongruesbeck.com --acl public-read",
     "deploy:ghpages": "NODE_ENV=production gulp build; git add .; git commit -m 'deploy'; git push origin master; git subtree push --prefix dist origin gh-pages",
-    "test": "echo 'test pending'"
+   "test": "echo 'test pending'"
   },
   "keywords": [
     "Portfolio",
