@@ -18,20 +18,21 @@
   ],
   "author": "Ron",
   "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
-    "browser-sync": "^2.23.6",
-    "del": "^2.2.0",
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0",
-    "gulp-hb": "^5.1.0",
-    "gulp-if": "^2.0.0",
-    "gulp-inject": "^4.0.0",
+  "dependencies": {
+    "browser-sync": "^2.24.4",
+    "del": "^3.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-hb": "^7.0.1",
+    "gulp-if": "^2.0.2",
+    "gulp-inject": "^4.3.2",
     "gulp-minify-css": "^1.2.4",
     "gulp-minify-html": "^1.0.6",
-    "gulp-replace": "^0.5.4",
-    "gulp-rev": "^7.0.0",
-    "gulp-sourcemaps": "^1.6.0",
-    "gulp-uglify": "^1.5.3"
+    "gulp-replace": "^1.0.0",
+    "gulp-rev": "^8.1.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }
