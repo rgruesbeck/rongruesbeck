@@ -1,20 +1,22 @@
 {
   "name": "rongruesbeck",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "rongruesbeck.com",
-  "main": "gulpfile.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/rgruesbeck/rongruesbeck.git"
   },
   "scripts": {
-    "start": "browser-sync start --server 'src' --files 'src'",
-    "deploy:s3": "aws s3 sync src s3://www.rongruesbeck.com --acl public-read",
-    "test": "echo 'test pending'"
+    "build": "rsync --delete -a src/ dist",
+    "watch": "npx chokidar 'src/**/*' -c 'npm run build'",
+    "deploy": "git subtree push --prefix dist origin gh-pages",
+    "serve": "live-server --no-browser dist",
+    "start": "npm run watch & npm run serve"
   },
   "author": "Ron",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.7"
+    "chokidar-cli": "^2.0.0",
+    "live-server": "^1.2.1"
   }
 }
